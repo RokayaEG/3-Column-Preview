@@ -1,0 +1,76 @@
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: hsl(0, 0%, 95%);
+}
+
+body {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: left;
+    color: hsla(0, 0%, 100%, 0.75);
+    background-color: hsl(0, 0%, 95%);
+}
+
+.container {
+    display: grid;
+    margin: 15% 25% 10% 25%;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+    grid-gap: 0px;
+    border-radius: 8px;
+    height: 380px;
+    overflow: hidden;
+}
+
+.item {
+    padding: 15%;
+}
+
+.button {
+    margin-top: 30%;
+    border: 1px solid;
+    border-radius: 30px;
+    width: 75%;
+    padding: 6%;
+    background-color: hsl(0, 0%, 95%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.button:hover {
+    background-color: transparent;
+}
+
+#button1 {
+    color: hsl(31, 77%, 52%);
+}
+
+#button2 {
+    color: hsl(184, 100%, 22%);
+}
+
+#button3 {
+    color: hsl(179, 100%, 13%);
+}
+
+#button1:hover,
+#button2:hover,
+#button3:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+}
+
+@media only screen and (max-width: 956px) {
+    .container {
+        margin: 15% 10% 10% 10%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .container {
+        grid-template-columns: auto;
+        height: auto;
+    }
+}
